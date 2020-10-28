@@ -1,0 +1,30 @@
+[
+  {
+    "ParameterKey": "ClusterName", 
+    "ParameterValue": "prod" 
+  },
+  {
+    "ParameterKey": "InfrastructureName", 
+    "ParameterValue": "prod-5lq8hC"
+  },
+  {
+    "ParameterKey": "HostedZoneId", 
+    "ParameterValue": "Z02494183GC33Y97ROXM5" 
+  },
+  {
+    "ParameterKey": "HostedZoneName", 
+    "ParameterValue": "thebrewery.app" 
+  },
+  {
+    "ParameterKey": "PublicSubnets", 
+    "ParameterValue": "subnet-02c86965f6f988c8f,subnet-0475bac1bdbd0e68d,subnet-0f67fb3281a2ba182"
+  },
+  {
+    "ParameterKey": "PrivateSubnets", 
+    "ParameterValue": "subnet-088d46918fe7227be,subnet-0d7968b4c4599a507,subnet-0f3e2cd5ae19525b9"
+  },
+  {
+    "ParameterKey": "VpcId", 
+    "ParameterValue": "vpc-0b0a7890137fdb0ae" 
+  }
+]

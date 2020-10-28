@@ -1,0 +1,74 @@
+[
+  {
+    "ParameterKey": "InfrastructureName", 
+    "ParameterValue": "prod-5lq8hC"
+  },
+  {
+    "ParameterKey": "RhcosAmi", 
+    "ParameterValue": "ami-0ca69ace595281607"
+  },
+  {
+    "ParameterKey": "AutoRegisterDNS", 
+    "ParameterValue": "yes" 
+  },
+  {
+    "ParameterKey": "PrivateHostedZoneId", 
+    "ParameterValue": "Z09448211C5B6NAR5Y96W" 
+  },
+  {
+    "ParameterKey": "PrivateHostedZoneName", 
+    "ParameterValue": "privatezonename"
+  },
+  {
+    "ParameterKey": "Master0Subnet", 
+    "ParameterValue": "subnet-088d46918fe7227be"
+  },
+  {
+    "ParameterKey": "Master1Subnet", 
+    "ParameterValue": "subnet-0d7968b4c4599a507"
+  },
+  {
+    "ParameterKey": "Master2Subnet", 
+    "ParameterValue": "subnet-0f3e2cd5ae19525b9"
+  },
+  {
+    "ParameterKey": "MasterSecurityGroupId", 
+    "ParameterValue": "sg-0662465c90f178fda"
+  },
+  {
+    "ParameterKey": "IgnitionLocation", 
+    "ParameterValue": "https://api-int.prod.thebrewery.app:22623/config/master"
+  },
+  {
+    "ParameterKey": "CertificateAuthorities", 
+    "ParameterValue": "data:text/plain;charset=utf-8;base64,LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURFRENDQWZpZ0F3SUJBZ0lJVncySmZsUU5ZVUV3RFFZSktvWklodmNOQVFFTEJRQXdKakVTTUJBR0ExVUUKQ3hNSmIzQmxibk5vYVdaME1SQXdEZ1lEVlFRREV3ZHliMjkwTFdOaE1CNFhEVEl3TVRBeU9EQXhNakExTkZvWApEVE13TVRBeU5qQXhNakExTkZvd0pqRVNNQkFHQTFVRUN4TUpiM0JsYm5Ob2FXWjBNUkF3RGdZRFZRUURFd2R5CmIyOTBMV05oTUlJQklqQU5CZ2txaGtpRzl3MEJBUUVGQUFPQ0FROEFNSUlCQ2dLQ0FRRUF6ZmtkTlJmazhqQkUKdkpSbDZMZUhQeDk1S3RGMU5rT1JKSlQ4Q2dzUzhoNkZXTW0yWFpnRGZsSkV6RlVsNGVJTXRneVFNcHpsZy83dQpsZU1XYzVRd09Zckt6citHQWJQaEl4ako2VzhoYzRFK3NCamNOeGZsaVVIS2I4aS9HMTBFVDBKelBGdGVSUll3CnlQSWFGbDVObWJVZE1DUHlKVFl5QWRraDZPR0ZNcEhpaWFLKzR1SDJoYkRNMTMvdXZGT21Pa2w4THpROVB5dEMKMmFmYTN4R0VBZ091QjhNRzV5TCtudTJ1cDhVUVFDZHRJY1RKcngwZkxCdDViYXZad2FKdWRHUW14dXMyNGkxZwpzNHU4bVFpNTR4WGZ0dW1NaUF0VmpPR3Nhem1jZk1FNDVVeDMwUm1WVWxZdnFvd3lqRGRrdm9yZzh4Y09nU2p1Cml0OE1yZG45Y3dJREFRQUJvMEl3UURBT0JnTlZIUThCQWY4RUJBTUNBcVF3RHdZRFZSMFRBUUgvQkFVd0F3RUIKL3pBZEJnTlZIUTRFRmdRVTI4OTdLMlJ0NTlzK1NRczR2eXNILzV4Ukw0RXdEUVlKS29aSWh2Y05BUUVMQlFBRApnZ0VCQUxOdGFnZFdPVURzczd4eVpUaGtWMUJ6bXZHZ3NWVVVlZlBTRnRHRlA3K0JnQUVyWFArSWhTYncyOUMyCjNpTmZiOWtZMjFEOGc3WWZlUEF3Q0JBUkdwUnZFenhzZlg2dEZXR2lnMmQ4NnhUNG5ncVY5U1F5TVFMWkNDdCsKb0Z3bUxXTW5DNUozaEtHUmwyNWVweENrbjRQbEhaVzBjcnpkMjhLYjRyT0RQYll6OHNscGhLRkt5R29jZUtpQgpWbmZGeEU5YlJZL2YwVDFtWHlqNDM1VnU1L3dwSlgxQ3Rta3hhMWxCWEtuWDhtc3pVcEpxN3BteEtqVHNkZEgzCk1tbDdzRnZmMlAzaWNjd1YzRjY3OTRPOC9UL1Nocy85ZWUvSGM4eEZHT25Ec25zNENJOXVvN3JVc2hmZGxjczIKQ21vYVFEMXMyVVJzblRiVGhDektkeU0vNDdRPQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+  },
+  {
+    "ParameterKey": "MasterInstanceProfileName", 
+    "ParameterValue": "clustersecurity-MasterInstanceProfile-ST2KBJKO8KIA" 
+  },
+  {
+    "ParameterKey": "MasterInstanceType", 
+    "ParameterValue": "r5a.xlarge"
+  },
+  {
+    "ParameterKey": "AutoRegisterELB", 
+    "ParameterValue": "yes" 
+  },
+  {
+    "ParameterKey": "RegisterNlbIpTargetsLambdaArn", 
+    "ParameterValue": "arn:aws:lambda:us-west-2:529030462779:function:clusterinfra-RegisterNlbIpTargets-1H6Q4YNXE51BK" 
+  },
+  {
+    "ParameterKey": "ExternalApiTargetGroupArn", 
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Exter-14POGSJ01RO95/bcee8ca5cfd7c958"
+  },
+  {
+    "ParameterKey": "InternalApiTargetGroupArn", 
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Inter-PDVXNCQY9DLP/486414cf6901a52c" 
+  },
+  {
+    "ParameterKey": "InternalServiceTargetGroupArn", 
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Inter-1VZC5HEETNA8Y/1d21e40032abea8d"
+  }
+]

@@ -49,7 +49,7 @@ Parameters:
     Description: IAM profile to associate with master nodes.
     Type: String
   MasterInstanceType:
-    Default: m5.xlarge
+    Default: m4.xlarge
     Type: String
     AllowedValues:
       - "m4.xlarge"
@@ -58,12 +58,6 @@ Parameters:
       - "m4.8xlarge"
       - "m4.10xlarge"
       - "m4.16xlarge"
-      - "m5.xlarge"
-      - "m5.2xlarge"
-      - "m5.4xlarge"
-      - "m5.8xlarge"
-      - "m5.10xlarge"
-      - "m5.16xlarge"
       - "c4.2xlarge"
       - "c4.4xlarge"
       - "c4.8xlarge"
@@ -72,6 +66,7 @@ Parameters:
       - "r4.4xlarge"
       - "r4.8xlarge"
       - "r4.16xlarge"
+      - "r5a.xlarge"
   AutoRegisterELB:
     Default: "yes"
     AllowedValues:
@@ -174,6 +169,7 @@ Resources:
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs:
+            Encrypted: "true"
             VolumeSize: "120"
             VolumeType: "gp2"
       IamInstanceProfile: !Ref MasterInstanceProfileName
@@ -186,7 +182,7 @@ Resources:
           SubnetId: !Ref "Master0Subnet"
       UserData:
         Fn::Base64: !Sub
-          - '{"ignition":{"config":{"merge":[{"source":"${SOURCE}"}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}"}]}},"version":"3.1.0"}}'
+          - '{"ignition":{"config":{"append":[{"source":"${SOURCE}","verification":{}}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}","verification":{}}]}},"timeouts":{},"version":"2.2.0"},"networkd":{},"passwd":{},"storage":{},"systemd":{}}'
           - {
               SOURCE: !Ref IgnitionLocation,
               CA_BUNDLE: !Ref CertificateAuthorities,
@@ -226,6 +222,7 @@ Resources:
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs:
+            Encrypted: "true"
             VolumeSize: "120"
             VolumeType: "gp2"
       IamInstanceProfile: !Ref MasterInstanceProfileName
@@ -238,7 +235,7 @@ Resources:
           SubnetId: !Ref "Master1Subnet"
       UserData:
         Fn::Base64: !Sub
-          - '{"ignition":{"config":{"merge":[{"source":"${SOURCE}"}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}"}]}},"version":"3.1.0"}}'
+          - '{"ignition":{"config":{"append":[{"source":"${SOURCE}","verification":{}}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}","verification":{}}]}},"timeouts":{},"version":"2.2.0"},"networkd":{},"passwd":{},"storage":{},"systemd":{}}'
           - {
               SOURCE: !Ref IgnitionLocation,
               CA_BUNDLE: !Ref CertificateAuthorities,
@@ -278,6 +275,7 @@ Resources:
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs:
+            Encrypted: "true"
             VolumeSize: "120"
             VolumeType: "gp2"
       IamInstanceProfile: !Ref MasterInstanceProfileName
@@ -290,7 +288,7 @@ Resources:
           SubnetId: !Ref "Master2Subnet"
       UserData:
         Fn::Base64: !Sub
-          - '{"ignition":{"config":{"merge":[{"source":"${SOURCE}"}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}"}]}},"version":"3.1.0"}}'
+          - '{"ignition":{"config":{"append":[{"source":"${SOURCE}","verification":{}}]},"security":{"tls":{"certificateAuthorities":[{"source":"${CA_BUNDLE}","verification":{}}]}},"timeouts":{},"version":"2.2.0"},"networkd":{},"passwd":{},"storage":{},"systemd":{}}'
           - {
               SOURCE: !Ref IgnitionLocation,
               CA_BUNDLE: !Ref CertificateAuthorities,

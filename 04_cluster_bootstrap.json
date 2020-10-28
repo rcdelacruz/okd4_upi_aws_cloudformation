@@ -1,0 +1,50 @@
+[
+  {
+    "ParameterKey": "InfrastructureName",
+    "ParameterValue": "prod-8vtzc"
+  },
+  {
+    "ParameterKey": "RhcosAmi",
+    "ParameterValue": "ami-000d6e92357ac605c"
+  },
+  {
+    "ParameterKey": "AllowedBootstrapSshCidr",
+    "ParameterValue": "0.0.0.0/0"
+  },
+  {
+    "ParameterKey": "PublicSubnet",
+    "ParameterValue": "subnet-07bdd9def951a79c0"
+  },
+  {
+    "ParameterKey": "MasterSecurityGroupId",
+    "ParameterValue": "sg-09b425c314b4a3793"
+  },
+  {
+    "ParameterKey": "VpcId",
+    "ParameterValue": "vpc-0981dbbcbb1877d37"
+  },
+  {
+    "ParameterKey": "BootstrapIgnitionLocation",
+    "ParameterValue": "s3://thebrewery-upi-aws/bootstrap.ign"
+  },
+  {
+    "ParameterKey": "AutoRegisterELB",
+    "ParameterValue": "yes"
+  },
+  {
+    "ParameterKey": "RegisterNlbIpTargetsLambdaArn",
+    "ParameterValue": "arn:aws:lambda:us-west-2:529030462779:function:clusterinfra-RegisterNlbIpTargets-EQB726OJLLG4"
+  },
+  {
+    "ParameterKey": "ExternalApiTargetGroupArn",
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Exter-7U61T527RMMF/dfbb08a1cc739f02"
+  },
+  {
+    "ParameterKey": "InternalApiTargetGroupArn",
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Inter-14JBZRKMI5RMD/0a166ea96660efde"
+  },
+  {
+    "ParameterKey": "InternalServiceTargetGroupArn",
+    "ParameterValue": "arn:aws:elasticloadbalancing:us-west-2:529030462779:targetgroup/clust-Inter-GIYKZN3EZJJA/a45f822d99ca7fd6"
+  }
+]
